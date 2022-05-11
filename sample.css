@@ -1,0 +1,135 @@
+/* .navbar{
+  padding-left:1.4ex;
+  padding-right:1.4ex;
+} */
+
+
+.header p{
+  font-family:montserrat,sans-serif;
+  font-style:italic;
+}
+
+.grid{
+  padding-left:1.4ex;
+  padding-right:1.4ex;
+  border-radius:20px;
+/*   border-shadow:10px; */
+}
+
+
+.navbar{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  background-color:#b2b6f0;
+  padding:15px;
+}
+.navbar a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.logo{
+  margin-right:50px;
+}
+
+.list{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+#toggler, .navbar label{
+ display:none;
+}
+
+@media screen and (max-width:600px){
+  .menu{
+    width:100%;
+    max-height:0;
+    overflow:hidden;
+  }
+  .list{
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
+  }
+  .navbar label{
+    display:inline-flex;
+    align-items:center;
+    cursor:pointer;
+  }
+  #toggler:checked ~ .menu{
+    max-height:100%;
+  }
+}
+
+.block{
+  display:flex;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 4.5em;
+-webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+/*   font-size: 6.8em; */
+  padding:1.4ex;
+    line-height: 0.85em;
+    font-weight: 600;
+      box-sizing: border-box;
+
+}
+.block{
+  padding-left:1.4ex;
+  padding-right:1.4ex;
+/*   border-radius:20px;  */
+}
+.block h2{
+/*   background-color:#f7eacf; */
+  border-radius:8%;
+  box-shadow:2 0 0 2;
+}
+.block img{
+  padding-left:1.4ex;
+  padding-right:1.4ex;
+  border-radius:20px;
+}
+/*   border-shadow:10px; */
+
+/* .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+  .text-over {
+  position: absolute;
+  bottom: -10px;
+  left: 50px;
+} */
+  
+.column1 img:hover{
+  
+  opacity:0.5;
+}
+
+.raw{
+  width:100%;
+  Height:100%;
+  opacity:1.0;
+}
+.px-3 {
+    padding-right: 1rem!important;
+    padding-left: 1rem!important;
+}
+main {
+    display: block;
+}
